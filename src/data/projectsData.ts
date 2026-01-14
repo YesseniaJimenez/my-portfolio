@@ -9,7 +9,7 @@ const projects = [
     imageUrl: tropaPreview,
     imageAlt: "Tropa website preview",
     liveUrl: "https://www.turopa.co/co",
-    technologies: ["React", "Node.js", "AdonisJS", "Stripe"],
+    technologies: ["React", "Node.js", "PostgreSQL", "Stripe"],
   },
 ];
 
