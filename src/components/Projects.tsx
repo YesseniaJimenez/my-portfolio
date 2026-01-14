@@ -1,84 +1,41 @@
+import { useTranslation } from "react-i18next";
 import projects from "../data/projectsData";
 
 export default function Projects() {
+  const { t } = useTranslation();
+
   return (
     <section id="lab" className="projects">
       <div className="container">
+        <h1 className="projects-title">{t("projects.title")}</h1>
+
         {projects.map((project) => (
-          <div key={project.id}>
-            <h1 className="projects-title">Projects</h1>
-
-            <div
-              className="projects-showcase"
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                gap: "2rem",
-              }}
-            >
-              <div
-                style={{
-                  width: "100%",
-                  display: "flex",
-                  justifyContent: "center",
-                  order: 1,
-                }}
+          <div key={project.id} className="projects-showcase">
+            <div>
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-card"
               >
-                <a
-                  href={project.liveUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-card"
-                >
-                  <img
-                    src={project.imageUrl}
-                    alt={project.imageAlt}
-                    style={{
-                      width: "100%",
-                      maxWidth: "600px",
-                      height: "auto",
-                      objectFit: "cover",
-                    }}
-                  />
-                  <div className="overlay">
-                    <span>Look the website in action</span>
-                  </div>
-                </a>
-              </div>
-
-              <div
-                style={{
-                  width: "100%",
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  order: 2,
-                }}
-              >
-                <p className="project-description">{project.description}</p>
-                <div className="project-icons">
-                  {project.technologies.map((tech, index) => (
-                    <div className="project-icon" key={index}>
-                      {tech}
-                    </div>
-                  ))}
+                <img src={project.imageUrl} alt={project.imageAlt} />
+                <div className="overlay">
+                  <span>{t("projects.view")}</span>
                 </div>
+              </a>
+            </div>
+
+            <div>
+              <p className="project-description">{t(project.descriptionKey)}</p>
+
+              <div className="project-icons">
+                {project.technologies.map((tech, index) => (
+                  <div className="project-icon" key={index}>
+                    {tech}
+                  </div>
+                ))}
               </div>
             </div>
-            <style>{`
-              @media (min-width: 768px) {
-                .projects-showcase {
-                  flex-direction: row !important;
-                }
-                .projects-showcase > div:first-child {
-                  order: 2 !important;
-                }
-                .projects-showcase > div:last-child {
-                  order: 1 !important;
-                }
-              }
-            `}</style>
           </div>
         ))}
       </div>

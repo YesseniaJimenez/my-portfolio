@@ -1,0 +1,45 @@
+{
+  "hero.hello": "¡Hola Mundo!",
+  "hero.greeting": "Soy",
+  "hero.role": "Una desarrolladora full stack que ama programar y crear experiencias web hermosas y funcionales",
+
+  "about.title": "Soy desarrolladora de software",
+  "about.text": "Con más de tres años de experiencia construyendo aplicaciones web de extremo a extremo tanto en frontend como en backend. Me especializo en el desarrollo de interfaces escalables y APIs robustas utilizando frameworks modernos como Vue, React y Node.js. Mi formación híbrida en tecnología y comunicación me permite cerrar la brecha entre equipos técnicos y no técnicos, asegurando una colaboración eficiente y un desarrollo de productos centrado en el usuario. Me apasiona escribir código limpio y eficiente y crear soluciones digitales que realmente potencien los resultados de negocio.",
+
+  "contact.title": "Contacto",
+  "contact.text": "Siempre estoy abierta a nuevas oportunidades, colaboraciones y desafíos interesantes. Si estás buscando una desarrolladora que disfrute crear soluciones limpias y escalables, no dudes en contactarme. Me encantaría conectar contigo y hablar sobre cómo podemos trabajar juntos.",
+  "experience.title": "Experiencia Laboral",
+  "experience.learnMore": "VER MÁS",
+  "experience.showLess": "VER MENOS",
+
+  "experience.1.title": "Desarrolladora Full Stack",
+  "experience.1.description": "Construí aplicaciones web de extremo a extremo con autenticación segura, arquitectura escalable e integración fluida entre frontend y backend.",
+  "experience.1.full": "FREELANCE\n- Desarrollé interfaces responsivas e interactivas alineadas con la identidad de cada proyecto.\n- Diseñé e implementé flujos completos conectando frontend y backend.\n- Construí rutas protegidas y control de acceso por roles.\n- Optimicé el rendimiento y el flujo de datos.\nLOGROS CLAVE:\n- Implementé un flujo completo de autenticación.\n- Integré backend AdonisJS con frontend Vue/Nuxt.",
+
+  "experience.2.title": "Desarrolladora COBOL",
+  "experience.2.description": "Mantuve y optimicé sistemas financieros críticos en entornos mainframe.",
+  "experience.2.full": "NEORIS\n- Desarrollo y mantenimiento de programas COBOL.\n- Soporte en producción y optimización de rendimiento.\nLOGROS CLAVE:\n- Migración y modernización de sistemas.",
+
+  "experience.3.title": "Desarrolladora WordPress",
+  "experience.3.description": "Desarrollé soluciones WordPress escalables con comercio electrónico e integración de pagos.",
+  "experience.3.full": "ANCLAS CARTAGENA\n- Desarrollo de sitios dinámicos en WordPress.\n- Integración de pasarelas de pago.\nLOGROS CLAVE:\n- Implementación de plataforma e-commerce.",
+
+  "nav.home": "Inicio",
+  "nav.about": "Sobre mí",
+  "nav.lab": "Laboratorio",
+  "nav.contact": "Contacto",
+
+  "projects.title": "Proyectos",
+  "projects.view": "Ver el sitio en acción",
+
+  "projects.1.title": "turopa.co",
+  "projects.1.description": "Una tienda de ropa e-commerce con envíos a nivel nacional, que cuenta con un flujo de usuario completo y robusto. Participé en el desarrollo end-to-end de la plataforma, incluyendo autenticación, gestión de productos, carrito de compras e integración de módulos de pago seguro. El proyecto se enfocó en el rendimiento, la escalabilidad y una experiencia fluida en todos los dispositivos.",
+
+  "skills.intro": "Actualmente busco unirme a un equipo multidisciplinario que valore mejorar la vida de las personas contribuyendo a iniciativas significativas y que me permita seguir creciendo como desarrolladora.",
+
+  "skills.languages": "Lenguajes",
+  "skills.frontend": "Frontend",
+  "skills.backend": "Backend",
+  "skills.databases": "Bases de datos",
+  "skills.tools": "Herramientas"
+}

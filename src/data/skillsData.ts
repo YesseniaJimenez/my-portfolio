@@ -32,7 +32,7 @@ interface SkillCategory {
 const skillsData: SkillCategory[] = [
   {
     id: 1,
-    title: "Languages",
+    title: "skills.languages",
     skills: [
       { name: "HTML", icon: htmlIcon, alt: "HTML" },
       { name: "CSS", icon: cssIcon, alt: "CSS" },
@@ -42,7 +42,7 @@ const skillsData: SkillCategory[] = [
   },
   {
     id: 2,
-    title: "Frontend",
+    title: "skills.frontend",
     skills: [
       { name: "React", icon: reactIcon, alt: "React" },
       { name: "Vue.js", icon: vueIcon, alt: "Vue.js" },
@@ -52,7 +52,7 @@ const skillsData: SkillCategory[] = [
   },
   {
     id: 3,
-    title: "Backend",
+    title: "skills.backend",
     skills: [
       { name: "Node.js", icon: nodeIcon, alt: "Node.js" },
       { name: "Express.js", icon: expressIcon, alt: "Express.js" },
@@ -61,7 +61,7 @@ const skillsData: SkillCategory[] = [
   },
   {
     id: 4,
-    title: "Databases",
+    title: "skills.databases",
     skills: [
       { name: "PostgreSQL", icon: postgresIcon, alt: "PostgreSQL" },
       { name: "SQL", icon: sqlIcon, alt: "SQL" },
@@ -70,7 +70,7 @@ const skillsData: SkillCategory[] = [
   },
   {
     id: 5,
-    title: "Tools",
+    title: "skills.tools",
     skills: [
       { name: "Git", icon: gitIcon, alt: "Git" },
       { name: "GitHub", icon: githubIcon, alt: "GitHub" },

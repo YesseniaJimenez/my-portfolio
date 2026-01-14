@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import experiences from "../data/experienceData";
 
 export default function Experience() {
+  const { t } = useTranslation();
   const [expandedCard, setExpandedCard] = useState<number | null>(null);
 
   const toggleCard = (id: number) => {
@@ -11,42 +13,26 @@ export default function Experience() {
   return (
     <section id="experience" className="experience">
       <div className="container">
-        <h2 className="section-title">Work Experience</h2>
+        <h2 className="section-title">{t("experience.title")}</h2>
 
         <div className="experience-grid">
           {experiences.map((exp) => (
             <div className="experience-card" key={exp.id}>
-              <div className={`card-icon card-icon-${exp.id}`}>
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
-                  <path d={exp.iconPath} fill={`url(#${exp.gradientId})`} />
-                  <defs>
-                    <linearGradient
-                      id={exp.gradientId}
-                      x1="0%"
-                      y1="0%"
-                      x2="100%"
-                      y2="100%"
-                    >
-                      <stop offset="0%" stopColor={exp.gradientColors[0]} />
-                      <stop offset="100%" stopColor={exp.gradientColors[1]} />
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </div>
-              <h3 className="card-title">{exp.title}</h3>
-              <p className="card-description">{exp.description}</p>
+              <h3 className="card-title">{t(exp.titleKey)}</h3>
+              <p className="card-description">{t(exp.descriptionKey)}</p>
+
               {expandedCard === exp.id && (
-                <p className="card-full-description">{exp.fulldescription}</p>
+                <p className="card-full-description">{t(exp.fullKey)}</p>
               )}
+
               <button
                 type="button"
                 className="card-button"
-                onClick={() => {
-                  toggleCard(exp.id);
-                  console.log("clicked");
-                }}
+                onClick={() => toggleCard(exp.id)}
               >
-                {expandedCard === exp.id ? "SHOW LESS" : "LEARN MORE"}
+                {expandedCard === exp.id
+                  ? t("experience.showLess")
+                  : t("experience.learnMore")}
               </button>
             </div>
           ))}

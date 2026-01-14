@@ -1,0 +1,46 @@
+{
+  "hero.hello": "Hello World!",
+  "hero.greeting": "I am",
+  "hero.role": "A full stack developer who loves to code and create beautiful and functional web experiences",
+
+  "about.title": "I'm a software developer",
+  "about.text": "With over three years of experience building end-to-end web applications across both frontend and backend environments. I specialize in developing scalable interfaces and robust APIs using modern frameworks such as Vue, React, and Node.js. My hybrid background in technology and communication allows me to bridge the gap between technical and non-technical teams, ensuring efficient collaboration and user-centered product development. I'm passionate about crafting clean, efficient code and delivering digital solutions that truly enhance business outcomes.",
+
+  "contact.title": "Contact",
+  "contact.text": "I’m always open to new opportunities, collaborations, and interesting challenges. If you’re looking for a developer who enjoys building clean, scalable solutions, feel free to reach out. I’d love to connect and talk about how we can work together.",
+
+  "experience.title": "Work Experience",
+  "experience.learnMore": "LEARN MORE",
+  "experience.showLess": "SHOW LESS",
+
+  "experience.1.title": "Full Stack Developer",
+  "experience.1.description": "Built end-to-end web applications with secure authentication, scalable architecture, and seamless frontend–backend integration.",
+  "experience.1.full": "FREELANCE\n- Developed responsive and interactive interfaces aligned with each project's brand identity.\n- Designed and implemented complete workflows connecting frontend and backend modules.\n- Built protected routes and role-based access control for secure user management.\n- Collaborated in planning new features and defining scalable module structures.\n- Debugged, maintained, and optimized application performance and data flow.\nKEY ACHIEVEMENTS:\n- Engineered a full authentication flow including registration, login, password recovery, and change modules with secure validation and role handling.\n- Integrated AdonisJS backend with Vue/Nuxt frontend, ensuring stable and efficient communication between both environments.",
+
+  "experience.2.title": "COBOL Developer",
+  "experience.2.description": "Maintained and optimized critical financial systems on mainframe environments with high reliability requirements.",
+  "experience.2.full": "NEORIS\n- Analyzed, designed, and developed COBOL programs for financial, administrative, and accounting processes.\n- Maintained and enhanced legacy systems to ensure operational stability and data integrity.\n- Provided production support during critical incidents and off-hours operations.\n- Optimized execution times through debugging and performance tuning.\nKEY ACHIEVEMENTS:\n- Contributed to mainframe system migrations and updates.\n- Improved the efficiency of financial transaction processes.",
+
+  "experience.3.title": "WordPress Developer",
+  "experience.3.description": "Developed scalable WordPress solutions including e-commerce platforms and secure payment integrations.",
+  "experience.3.full": "ANCLAS CARTAGENA\n- Designed and developed dynamic websites using WordPress.\n- Integrated secure payment gateways (PayU, Stripe, Mercado Pago).\n- Managed maintenance and optimization of live websites.\nKEY ACHIEVEMENTS:\n- Led the implementation of an e-commerce platform.\n- Deployed secure payment systems.",
+
+  "nav.home": "Home",
+  "nav.about": "About",
+  "nav.lab": "Lab",
+  "nav.contact": "Contact",
+
+  "projects.title": "Projects",
+  "projects.view": "Look the website in action",
+
+  "projects.1.title": "turopa.co",
+  "projects.1.description": "An e-commerce clothing store with nationwide shipping, featuring a complete and robust user flow. I participated in the end-to-end development of the platform, including user authentication, product management, shopping cart, and secure payment module integrations. The project focused on performance, scalability, and a smooth user experience across devices.",
+
+  "skills.intro": "I'm currently looking to join a cross-functional team that values improving people's lives by contributing to meaningful initiatives and continuing to evolve as a developer.",
+
+  "skills.languages": "Languages",
+  "skills.frontend": "Frontend",
+  "skills.backend": "Backend",
+  "skills.databases": "Databases",
+  "skills.tools": "Tools"
+}

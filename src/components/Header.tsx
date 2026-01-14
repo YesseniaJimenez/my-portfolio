@@ -1,7 +1,10 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const { t, i18n } = useTranslation();
+  const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -10,6 +13,22 @@ export default function Header() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    const handleLanguageChange = (lng: string) => {
+      setCurrentLanguage(lng);
+    };
+    i18n.on("languageChanged", handleLanguageChange);
+    return () => {
+      i18n.off("languageChanged", handleLanguageChange);
+    };
+  }, [i18n]);
+
+  const toggleLanguage = () => {
+    const newLanguage = currentLanguage === "en" ? "es" : "en";
+    i18n.changeLanguage(newLanguage);
+    setCurrentLanguage(newLanguage);
+  };
 
   return (
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
@@ -60,15 +79,21 @@ export default function Header() {
         </div>
         <ul className="nav-menu">
           <li>
-            <a href="#home">Home</a>
+            <a href="#home">{t("nav.home")}</a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a href="#about">{t("nav.about")}</a>
           </li>
           <li>
-            <a href="#lab">Lab</a>
+            <a href="#lab">{t("nav.lab")}</a>
+          </li>
+          <li>
+            <a href="#contact">{t("nav.contact")}</a>
           </li>
         </ul>
+        <button className="language-toggle" onClick={toggleLanguage}>
+          {currentLanguage === "en" ? "ES" : "EN"}
+        </button>
       </div>
     </nav>
   );
