@@ -16,6 +16,7 @@ import gitIcon from "../assets/images/git-icon.png";
 import githubIcon from "../assets/images/github-icon.png";
 import postmanIcon from "../assets/images/postman-icon.png";
 import figmaIcon from "../assets/images/figma-icon.png";
+import nextIcon from "../assets/images/next-icon.png";
 
 interface SkillItem {
   name: string;
@@ -57,6 +58,7 @@ const skillsData: SkillCategory[] = [
       { name: "Node.js", icon: nodeIcon, alt: "Node.js" },
       { name: "Express.js", icon: expressIcon, alt: "Express.js" },
       { name: "AdonisJS", icon: adonisIcon, alt: "AdonisJS" },
+      { name: "Next.js", icon: nextIcon, alt: "Next.js" },
     ],
   },
   {

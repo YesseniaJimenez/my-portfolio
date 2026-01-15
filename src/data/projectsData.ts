@@ -1,4 +1,3 @@
-// projectsData.js
 import tropaPreview from "../assets/images/turopa-preview.jpeg";
 
 const projects = [

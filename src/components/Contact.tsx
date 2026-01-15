@@ -17,7 +17,7 @@ export default function Contact() {
 
           <div className="social-links">
             <a
-              href="https://github.com/YesseniaJimenez#"
+              href="https://github.com/YesseniaJimenez"
               className="social-link"
               aria-label="Github"
             >

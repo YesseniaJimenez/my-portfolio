@@ -4,7 +4,6 @@ import { useTranslation } from "react-i18next";
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const { t, i18n } = useTranslation();
-  const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,20 +13,9 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => {
-    const handleLanguageChange = (lng: string) => {
-      setCurrentLanguage(lng);
-    };
-    i18n.on("languageChanged", handleLanguageChange);
-    return () => {
-      i18n.off("languageChanged", handleLanguageChange);
-    };
-  }, [i18n]);
-
   const toggleLanguage = () => {
-    const newLanguage = currentLanguage === "en" ? "es" : "en";
+    const newLanguage = i18n.language === "en" ? "es" : "en";
     i18n.changeLanguage(newLanguage);
-    setCurrentLanguage(newLanguage);
   };
 
   return (
@@ -92,7 +80,7 @@ export default function Header() {
           </li>
         </ul>
         <button className="language-toggle" onClick={toggleLanguage}>
-          {currentLanguage === "en" ? "ES" : "EN"}
+          {i18n.language === "en" ? "ES" : "EN"}
         </button>
       </div>
     </nav>
